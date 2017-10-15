@@ -8,15 +8,22 @@ var RAJ00008 = {
         d.addEventListener("mouseover", RAJ00008.MouseOver);//mouseOver event
         d.addEventListener("mouseout", RAJ00008.MouseOut);//mouseout event
         boxes.appendChild(d);
+       function MouseOver(ev)
+       {
+           ev.currentTarget.classList.toggle("highlight");s
+       }
+       function MouseOut(ev){
+           ev.currentTarget.classList.toggle("highlight");
+       }
     },
     Click: function (ev) {
         ev.currentTarget.style.borderColor = "#7E4B7F";//bodercolour changed
         ev.currentTarget.style.backgroundColor = "#FC8AFF";//background changed
     },
-    MouseOver: function (ev) {
-        ev.currentTarget.classList.toggle("highlight");
-    },
-    MouseOut: function (ev) {
-        ev.currentTarget.classList.toggle("highlight");
-    }
+//    MouseOver: function (ev) {
+//        ev.currentTarget.classList.toggle("highlight");
+//    },
+//    MouseOut: function (ev) {
+//        ev.currentTarget.classList.toggle("highlight");
+//    }
 };
